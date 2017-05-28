@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Room4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0, user-scalable-true;">
+        <link href="global.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+            $(function() {
+                var photos = $('img');
+                var i = 0;
+                function nextSlide() {
+                    if (i == 0) {
+                        $(photos[0]).show();
+                        $(photos[photos.length - 1]).hide();
+                    } else if (i < photos.length) {
+                        $(photos[i - 1]).hide();
+                        $(photos[i]).show();
+                    } else {
+                        $(photos[i - 1]).hide();
+                        $(photos[0]).show();
+                        i = 0;
+                    }
+                    i++;
+                    console.log(i);
+                }
+                setInterval(nextSlide, 1000);
+            })
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            
+            <nav>
+                
+                <!--<div class="logo">-->
+                <!--  <img src="Room4.jpg"/>-->
+                <!--</div>  -->
+                
+                <div class="roomfor">#room4</div>
+                
+                <ul>
+                    <!-- <li> <a href="#Room4"> </a> </li> -->
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="about.html"> About </a> </li>
+                    <li> <a href="findRoom.html"> Find Room</a> </li>
+                    <li> <a href="giveRoom.html"> Give Room</a> </li>
+                </ul>
+            
+            </nav>
+        </header>
+        <body>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <section id="slideshow">
+                <ul>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL0MKSHsxA3UH-FAZmIZG0wj9VTHB79lfzLe_tXm29jczJw1citw" /></li>
+                    <li><img src="https://us.123rf.com/450wm/stockbroker/stockbroker1507/stockbroker150702377/42164488-man-helping-senior-woman-with-shopping.jpg?ver=6" /></li>
+                    <li><img src="http://3s9h7h3y0i6u2n9j4h5vgkf1.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/NEPAL-EARTHQUAKE-aftermath-man-helped-by-two-others1.jpg" /></li>
+                    <li><img src="http://casacostello.com/wp-content/uploads/2011/09/142.jpg" /></li>
+                    <li><img src="http://www.mainlander.com/images/happy-people-in-front-of-house.jpg" /></li>
+                </ul>
+            </section>
+            
+            <div id="aboutinfo">
+                <h1 class="whatisthis">
+                    What is Room4?
+                </h1>
+                <p>
+                    Room4 is an website platform dedicated to helping people find emergency housing for those in need during disasters. This has been inspired by the “#roomformanchester” hashtag. Our Website tracks information requests via Facebook, Twitter, and our forms, and pairs hostess with hosters.
+                </p>
+            </div>
+        </body>
+</html>
+<!--
+var defaulthostess = [
+['NYC Rescue Mission' , 40.7174, 74.0017],
+]
+-->

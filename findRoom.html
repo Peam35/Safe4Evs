@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Room4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0, user-scalable-true;">
+        <link href="global.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+            $(function() {
+                $('#boughtSubmit').click(function() {
+                    $.cookie('firstName', $('#fn'));
+                    $.cookie('lastName', $('#ln'));
+                    $.cookie('phoneNumber', $('#pn'));
+                    $.cookie('serialNumber', $('#sn'));
+                    $.cookie('combinationNumber', $('#cn'));
+                })
+            })
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            
+            <nav>
+                
+                <!--<div class="logo">-->
+                <!--  <img src="Room4.jpg"/>-->
+                <!--</div>  -->
+                
+                <div class="roomfor">#room4</div>
+                
+                <ul>
+                    <!-- <li> <a href="#Room4"> </a> </li> -->
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="about.html"> About </a> </li>
+                    <li> <a href="findRoom.html"> Find Room</a> </li>
+                    <li> <a href="giveRoom.html"> Give Room</a> </li>
+                </ul>
+            
+            </nav>
+        </header>
+        <body>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div> 
+                <form>
+                	<fieldset>
+                		 <legend><b>Find me a Room! </b></legend> <br>
+                			  First name:<br><br>
+                			  <input id="fn" type="text" name="firstName" placeholder="Your first name"><br><br>
+                			  Last name:<br><br> 
+                			  <input id="ln" type="text" name="lastName" placeholder="Your last name"><br><br>
+                			  Phone Number:<br><br> 
+                			  <input id="pn" type="text" name="phoneNumber" placeholder="Your phone number"><br><br>
+                		      (Optional)Your Location Right Now:<br><br> 
+                		      <input id="cn" type="text" name="combinationNumber" placeholder="City, State, Zip code"><br><br><br>
+                			  <input id="boughtSubmit" type="submit" value="Find a Safe Spot">
+                	   </fieldset>
+                </form>
+            </div>
+        </body>
+        </html> 
